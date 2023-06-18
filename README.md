@@ -66,7 +66,7 @@ f6aefd6691f04573bdf9e044137372bcOic72e78efefe6b4577a1f7afbca56b6e28993c06ea4bb84
 
 9、还原了api\_sign的计算方式，就可以开发burp插件自动更新签名校验的参数api\_sign
 
-1. ### 用burp插件自动更新签名
+### 用burp插件自动更新签名
 
 burp插件的接口开发可以参考官方文档和官方的代码demo，[https://portswigger.net/burp/extender/api/index.html](https://portswigger.net/burp/extender/api/index.html)
 
@@ -94,7 +94,7 @@ burp插件的接口开发可以参考官方文档和官方的代码demo，[https
 <img width="640" alt="image" src="https://github.com/hbdxmz/AutoBypassEncryptAndSign/assets/94107024/2ca9a834-cb2c-4674-b1a6-def813608aaf">
 
 
-#### 数据包分段加密
+### 数据包分段加密
 
 一个H5应用，在微信可以正常访问，放到浏览器访问限制
 
