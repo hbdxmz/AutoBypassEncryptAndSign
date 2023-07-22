@@ -1,4 +1,9 @@
 #### AutoBypassEncryptAndSign
+
+Aiming  request data is encrypted and API sign protection, the burpplug is used to automatically decrypt the request ciphertext and automatically bypass the signature of the API. 
+
+Finally, making use of the characteristic that the request ciphertext does not trigger WAF, combined with the scanning tool to complete the semi-automatic vulnerability search of App protected by WAF.
+
 1. PS：项目中的插件并不是通用的，因为不同厂商针对自己业务的数据包加密算法、签名保护算法各种各样，需要先还原加密算法（或者签名保护算法），再对应的修改插件的加密算法（或者签名保护算法），笔者通过几个案例介绍这类业务的通用测试流程：常见加密算法分析流程、burp插件开发、联动Xray半自动化挖洞，主要是通过介绍这类业务的通用测试方法，降低安全测试的人力成本
 2. 案例：https://xz.aliyun.com/t/12295
 3. 项目中的两个插件源码即案例中介绍的自动加解密数据包密文、自动绕过签名保护的插件源码
